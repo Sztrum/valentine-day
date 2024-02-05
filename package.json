@@ -1,0 +1,30 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "build:watch": "npx webpack --watch",
+    "dev": "postcss src/styles.css -o dist/main.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss src/styles.css -o dist/main.css",
+    "git": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "date-fns": "^3.3.1",
+    "postcss-cli": "^11.0.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.34",
+    "postcss-import": "^16.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
